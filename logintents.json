@@ -1,0 +1,273 @@
+{
+  "intents": [
+    {
+      "tag": "intro.greeting",
+      "patterns": [
+        "Hi",
+        "Hey there",
+        "What's up",
+        "Hello",
+        "Good day"
+      ],
+      "type": "direct",
+      "formatBlank": "userName",
+      "responses": [
+        "Hey there, {}",
+        "Wow {}, it's good to see you again",
+        "Hi there, how can I help?"
+      ]
+    },
+    {
+      "tag": "intro.introduction",
+      "patterns": [
+        "Who are you?",
+        "What's your name"
+      ],
+      "type": "direct",
+      "formatBlank": "botName",
+      "responses": [
+        "It's nice to meet you! My name is {}"
+      ]
+    },
+    {
+      "tag": "intro.formalfeelings",
+      "patterns": [
+        "How are you",
+        "How are you doing today",
+        "How are you today"
+      ],
+      "type": "direct",
+      "formatBlank": "none",
+      "responses": [
+        "I'm doing great, thanks for asking!",
+        "Today is going swell"
+      ]
+    },
+    {
+      "tag": "feelings.lonely",
+      "patterns": [
+        "I'm feeling quite alone",
+        "It's lonely here",
+        "I miss being able to see my friends",
+        "Night time is always so lonely",
+        "i am feeling quite upset"
+      ],
+      "type": "direct",
+      "formatBlank": "none",
+      "responses": [
+        "Well, you have me!",
+        "Is there anything I can do for you?",
+        "Feeling that way is never fun"
+      ]
+    },
+    {
+      "tag": "feelings.happy",
+      "patterns": [
+        "Today has been a good day",
+        "I'm quite happy right now",
+        "Life has been good to me lately",
+        "I've had a good day",
+        "I've had a great day so far",
+        "Today was amazing!"
+      ],
+      "type": "direct",
+      "formatBlank": "none",
+      "responses": [
+        "That's great to hear!",
+        "Aw, I'm glad to hear that"
+      ]
+    },
+    {
+      "tag": "feelings.sad",
+      "patterns": [
+        "Tonight is going to be a sad one",
+        "I'm feeling some sad music",
+        "I miss being able to see my friends",
+        "Night time is always so lonely",
+        "Today was depressing",
+        "I'm in an upsetting mood",
+        "I am sad",
+        "I am feeling sad",
+        "I'm feeling quite sad",
+        "I am quite sad"
+      ],
+      "type": "direct",
+      "formatBlank": "none",
+      "responses": [
+        "Being down is never a good thing",
+        "Is there anything I can do for you?",
+        "Feeling that way is never fun",
+        "Is there any reason in particular?",
+        "You should ask to hear a joke"
+      ]
+    },
+    {
+      "tag": "general.jokes",
+      "patterns": [
+        "Can I hear a joke",
+        "Tell me something funny",
+        "You should say a joke",
+        "Make me laugh",
+        "I would like to hear a joke",
+        "Can you tell any jokes?"
+      ],
+      "type": "direct",
+      "formatBlank": "none",
+      "responses": [
+        "What do you call a hypocritical prisoner walking down the stairs? A condescending con descending",
+        "What do you call an alligator that wears a vest? An investigator"
+      ]
+    },
+    {
+      "tag": "general.thanks",
+      "patterns": [
+        "Thanks",
+        "Thank you",
+        "That's helpful",
+        "I appreciate it"
+      ],
+      "type": "direct",
+      "formatBlank": "none",
+      "responses": [
+        "Happy to help!",
+        "Any time!",
+        "My pleasure"
+      ]
+    },
+    {
+      "tag": "leave.goodbye",
+      "patterns": [
+        "Bye",
+        "See you later",
+        "Goodbye",
+        "Adios",
+        "Talk to you soon"
+      ],
+      "type": "direct",
+      "formatBlank": "none",
+      "responses": [
+        "See you later, thanks for the chat",
+        "Have a nice day",
+        "Bye!",
+        "I'll be here"
+      ]
+    },
+    {
+      "tag": "leave.goodnight",
+      "patterns": [
+        "Goodnight",
+        "Sleep tight",
+        "It's bedtime",
+        "Sleep time",
+        "I'm going to bed",
+        "I'm heading to bed"
+      ],
+      "type": "direct",
+      "formatBlank": "userName",
+      "responses": [
+        "Sleep tight, {}",
+        "Talk to you tomorrow",
+        "Goodnight, {}",
+        "Have a good night!"
+      ]
+    },
+    {
+      "tag": "music.currentplaying",
+      "patterns": [
+        "What song is this?",
+        "What song is currently playing?",
+        "What track is this?",
+        "Who sings this?",
+        "Who is this song by?"
+      ],
+      "type": "function",
+      "formatBlank": "none",
+      "responses": []
+    },
+    {
+      "tag": "music.newsong",
+      "patterns": [
+        "You should play",
+        "Change the song to",
+        "I want to hear",
+        "Play by"
+      ],
+      "type": "function",
+      "formatBlank": "none",
+      "responses": []
+    },
+    {
+      "tag": "music.pause",
+      "patterns": [
+        "Stop the music",
+        "Pause the music",
+        "Stop playing",
+        "Pause",
+        "Pause track"
+      ],
+      "type": "function",
+      "formatBlank": "none",
+      "responses": []
+    },
+    {
+      "tag": "music.play",
+      "patterns": [
+        "Resume playing",
+        "Start playing my music",
+        "Begin music",
+        "Play",
+        "Play tracks"
+      ],
+      "type": "function",
+      "formatBlank": "none",
+      "responses": []
+    },
+    {
+      "tag": "music.volume",
+      "patterns": [
+        "Set the volume to",
+        "Make the volume",
+        "Percent"
+      ],
+      "type": "function",
+      "formatBlank": "none",
+      "responses": []
+    },
+    {
+      "tag": "weather.now",
+      "patterns": [
+        "What's the weather outside right now?",
+        "What's the current temperature?",
+        "How cold is it",
+        "How warm is it"
+      ],
+      "type": "function",
+      "formatBlank": "none",
+      "responses": []
+    },
+    {
+      "tag": "weather.sunset",
+      "patterns": [
+        "What time will it get dark",
+        "What time will the sun set",
+        "When will the sun be setting"
+      ],
+      "type": "function",
+      "formatBlank": "none",
+      "responses": []
+    },
+    {
+      "tag": "bot.retrain",
+      "patterns": [
+        "You need a new model",
+        "Can you please retrain?",
+        "Update your model",
+        "Please integrate past responses",
+        "retrain"
+      ],
+      "type": "function",
+      "formatBlank": "none",
+      "responses": []
+    }
+  ]
+}
